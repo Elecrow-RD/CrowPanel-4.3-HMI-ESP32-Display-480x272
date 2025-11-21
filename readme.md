@@ -6,7 +6,13 @@
 
 |      | Hardware | Software | Remark |
 | ---- | -------- | -------- | ------ |
+| 1    | V1.0     | V1.0     | old |
+| 1    | V1.1     | V1.1     | old |
+| 1    | V2.0     | V2.0     | old |
 | 1    | V2.1     | V2.0     | latest |
+
+**Version 2.0** upgrades the automatic download feature from Version 1.0.
+
 
 ### 3, product information
 
