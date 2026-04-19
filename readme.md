@@ -24,7 +24,7 @@
 - Screen: TFT-LCD Screen
 - Display driver: NV3047
 - External power supply: DC5V-2A
-- Interface: 1*TF Card Slot, 2* GPIO, 1*Speak, 2* UART1, 1*UART0
+- Interface: 1\*TF Card Slot, 2\* GPIO, 1\*Speak, 2\* UART1, 1\*UART0
 - Button: BOOT Button and Reset Button
 - Active Area: 95.04\*53.86mm(W*H)
 - Working Temperature: -20℃～70℃
