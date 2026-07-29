@@ -4,6 +4,13 @@ import struct
 from machine import I2S
 from machine import Pin
 
+
+
+SCK_PIN = 35
+WS_PIN = 19
+SD_PIN = 20
+I2S_ID = 0
+BUFFER_LENGTH_IN_BYTES = 2000
 def make_tone(rate, bits, frequency):
     # create a buffer containing the pure tone samples
     samples_per_cycle = rate // frequency
@@ -23,61 +30,61 @@ def make_tone(rate, bits, frequency):
         
     return samples
 
-if os.uname().machine.count("PYBv1"):
-
-    # ======= I2S CONFIGURATION =======
-    SCK_PIN = "Y6"
-    WS_PIN = "Y5"
-    SD_PIN = "Y8"
-    I2S_ID = 2
-    BUFFER_LENGTH_IN_BYTES = 2000
-    # ======= I2S CONFIGURATION =======
-
-elif os.uname().machine.count("PYBD"):
-    import pyb
-
-    pyb.Pin("EN_3V3").on()  # provide 3.3V on 3V3 output pin
-
-    # ======= I2S CONFIGURATION =======
-    SCK_PIN = "Y6"
-    WS_PIN = "Y5"
-    SD_PIN = "Y8"
-    I2S_ID = 2
-    BUFFER_LENGTH_IN_BYTES = 2000
-    # ======= I2S CONFIGURATION =======
-
-elif os.uname().machine.count("ESP32"):
-
-    # ======= I2S CONFIGURATION =======
-    SCK_PIN = 35
-    WS_PIN = 19
-    SD_PIN = 20
-    I2S_ID = 0
-    BUFFER_LENGTH_IN_BYTES = 2000
-    # ======= I2S CONFIGURATION =======
-
-elif os.uname().machine.count("Raspberry"):
-
-    # ======= I2S CONFIGURATION =======
-    SCK_PIN = 16
-    WS_PIN = 17
-    SD_PIN = 18
-    I2S_ID = 0
-    BUFFER_LENGTH_IN_BYTES = 1000
-    # ======= I2S CONFIGURATION =======
-
-elif os.uname().machine.count("MIMXRT"):
-
-    # ======= I2S CONFIGURATION =======
-    SCK_PIN = 4
-    WS_PIN = 3
-    SD_PIN = 2
-    I2S_ID = 2
-    BUFFER_LENGTH_IN_BYTES = 2000
-    # ======= I2S CONFIGURATION =======
-
-else:
-    print("Warning: program not tested with this board")
+# if os.uname().machine.count("PYBv1"):
+# 
+#     # ======= I2S CONFIGURATION =======
+#     SCK_PIN = "Y6"
+#     WS_PIN = "Y5"
+#     SD_PIN = "Y8"
+#     I2S_ID = 2
+#     BUFFER_LENGTH_IN_BYTES = 2000
+#     # ======= I2S CONFIGURATION =======
+# 
+# elif os.uname().machine.count("PYBD"):
+#     import pyb
+# 
+#     pyb.Pin("EN_3V3").on()  # provide 3.3V on 3V3 output pin
+# 
+#     # ======= I2S CONFIGURATION =======
+#     SCK_PIN = "Y6"
+#     WS_PIN = "Y5"
+#     SD_PIN = "Y8"
+#     I2S_ID = 2
+#     BUFFER_LENGTH_IN_BYTES = 2000
+#     # ======= I2S CONFIGURATION =======
+# 
+# elif os.uname().machine.count("ESP32"):
+# 
+#     # ======= I2S CONFIGURATION =======
+#     SCK_PIN = 35
+#     WS_PIN = 19
+#     SD_PIN = 20
+#     I2S_ID = 0
+#     BUFFER_LENGTH_IN_BYTES = 2000
+#     # ======= I2S CONFIGURATION =======
+# 
+# elif os.uname().machine.count("Raspberry"):
+# 
+#     # ======= I2S CONFIGURATION =======
+#     SCK_PIN = 16
+#     WS_PIN = 17
+#     SD_PIN = 18
+#     I2S_ID = 0
+#     BUFFER_LENGTH_IN_BYTES = 1000
+#     # ======= I2S CONFIGURATION =======
+# 
+# elif os.uname().machine.count("MIMXRT"):
+# 
+#     # ======= I2S CONFIGURATION =======
+#     SCK_PIN = 4
+#     WS_PIN = 3
+#     SD_PIN = 2
+#     I2S_ID = 2
+#     BUFFER_LENGTH_IN_BYTES = 2000
+#     # ======= I2S CONFIGURATION =======
+# 
+# else:
+#     print("Warning: program not tested with this board")
 
 # ======= AUDIO CONFIGURATION =======
 TONE_FREQUENCY_IN_HZ = 440
