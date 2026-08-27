@@ -1,0 +1,1 @@
+{"type": "tool", "name": "tool-scons", "version": "4.40801.0", "spec": {"owner": "platformio", "id": null, "name": "tool-scons", "requirements": null, "uri": "https://github.com/pioarduino/scons/releases/download/4.8.1/scons-local-4.8.1.tar.gz"}}

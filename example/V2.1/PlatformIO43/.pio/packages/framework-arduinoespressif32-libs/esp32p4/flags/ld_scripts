@@ -1,0 +1,1 @@
+-T rom.api.ld -T esp32p4.peripherals.ld -T esp32p4.rom.eco5.ld -T esp32p4.rom.api.ld -T esp32p4.rom.eco5.rvfp.ld -T esp32p4.rom.wdt.ld -T esp32p4.rom.systimer.ld -T esp32p4.rom.version.ld -T esp32p4.rom.eco5.libc.ld -T esp32p4.rom.eco5.newlib.ld -T memory.ld -T sections.ld 

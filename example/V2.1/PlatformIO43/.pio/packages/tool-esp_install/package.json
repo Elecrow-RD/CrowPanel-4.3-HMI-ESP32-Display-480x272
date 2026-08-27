@@ -1,0 +1,18 @@
+{
+    "name": "tool-esp_install",
+    "version": "5.3.4",
+    "description": "modified espressif installer tool: idf_tools.py",
+    "keywords": [
+      "tools",
+      "installer"
+    ],
+    "homepage": "https://github.com/pioarduino",
+    "license": "Apache-2.0",
+    "system": [
+      "*"
+    ],
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/pioarduino/esp_install"
+    }
+  }

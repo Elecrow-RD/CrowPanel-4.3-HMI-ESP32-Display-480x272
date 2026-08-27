@@ -1,0 +1,41 @@
+{
+  "build": {
+    "core": "esp32",
+    "extra_flags": "-DARDUINO_ESP32_DEV -DARDUINO_USB_CDC_ON_BOOT=0 -DCORE32SOLO1",
+    "f_cpu": "160000000L",
+    "f_flash": "40000000L",
+    "flash_mode": "dio",
+    "mcu": "esp32",
+    "variant": "esp32"
+  },
+  "connectivity": [
+    "wifi",
+    "bluetooth",
+    "ethernet",
+    "can"
+  ],
+  "debug": {
+    "openocd_target": "esp32-solo-1.cfg"
+  },
+  "frameworks": [
+    "arduino",
+    "espidf"
+  ],
+  "name": "Espressif Generic ESP32-solo1 4M Flash",
+  "upload": {
+    "flash_size": "4MB",
+    "maximum_ram_size": 327680,
+    "maximum_size": 4194304,
+    "require_upload_port": true,
+    "speed": 460800
+  },
+  "espidf": {
+    "custom_sdkconfig": [
+      "CONFIG_FREERTOS_UNICORE=y",
+      "# CONFIG_BOOTLOADER_SPI_CUSTOM_WP_PIN is not set",
+      "CONFIG_BOOTLOADER_SPI_WP_PIN=7"
+    ]
+  },
+  "url": "https://www.espressif.com/sites/default/files/documentation/esp32-solo-1_datasheet_en.pdf",
+  "vendor": "Espressif"
+}

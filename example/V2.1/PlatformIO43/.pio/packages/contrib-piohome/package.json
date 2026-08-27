@@ -1,0 +1,1 @@
+{"name": "contrib-piohome", "version": "3.4.4", "description": "PlatformIO Home front-end add-on", "homepage": "https://docs.platformio.org/page/home/index.html", "keywords": ["platformio", "platformio-core", "platformio-home", "ui", "manage"], "license": "Apache-2.0", "repository": "https://github.com/platformio/platformio-home", "export": {"exclude": [".piopm"]}}

@@ -1,0 +1,24 @@
+{
+  "name": "toolchain-xtensa-esp-elf",
+  "version": "14.2.0+20260121",
+  "description": "GCC Toolchain for Espressif ESP32 Xtensa MCUs",
+  "keywords": [
+    "build tools",
+    "compiler",
+    "assembler",
+    "linker",
+    "preprocessor",
+    "espressif",
+    "esp32",
+    "esp32s2",
+    "esp32s3"
+  ],
+  "license": "GPL-2.0-or-later",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/espressif/crosstool-NG"
+  },
+  "system": [
+    "*"
+  ]
+}

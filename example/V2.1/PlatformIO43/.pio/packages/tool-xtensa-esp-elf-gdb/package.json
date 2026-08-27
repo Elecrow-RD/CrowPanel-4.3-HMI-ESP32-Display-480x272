@@ -1,0 +1,20 @@
+{
+  "name": "tool-xtensa-esp-elf-gdb",
+  "version": "16.3.0+20250913",
+  "description": "GNU GDB for Espressif ESP32 Xtensa MCUs",
+  "keywords": [
+    "debugger",
+    "espressif",
+    "esp32",
+    "esp32s2",
+    "esp32s3"
+  ],
+  "license": "GPL-3.0-or-later",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/espressif/binutils-gdb.git"
+  },
+  "system": [
+    "*"
+  ]
+}

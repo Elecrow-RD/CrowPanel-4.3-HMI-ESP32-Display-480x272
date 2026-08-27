@@ -1,0 +1,1 @@
+{"type": "tool", "name": "framework-arduinoespressif32", "version": "3.3.8", "spec": {"owner": "espressif", "id": null, "name": "framework-arduinoespressif32", "requirements": null, "uri": "https://github.com/espressif/arduino-esp32/releases/download/3.3.8/esp32-core-3.3.8.zip"}}

@@ -1,0 +1,1 @@
+{"type": "platform", "name": "espressif32", "version": "55.3.38", "spec": {"owner": null, "id": null, "name": "platform-espressif32", "requirements": null, "uri": "https://github.com/pioarduino/platform-espressif32/releases/download/55.03.38/platform-espressif32.zip"}}

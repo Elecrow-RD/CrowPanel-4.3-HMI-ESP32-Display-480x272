@@ -1,0 +1,1 @@
+{"type": "tool", "name": "toolchain-xtensa-esp-elf", "version": "14.2.0+20260121", "spec": {"owner": null, "id": null, "name": "toolchain-xtensa-esp-elf", "requirements": null, "uri": "file://J:\\Basic_HMI_Code\\NEW_Basic_Code\\4.3\\PlatformIO\\.pio\\core\\tools\\toolchain-xtensa-esp-elf"}}

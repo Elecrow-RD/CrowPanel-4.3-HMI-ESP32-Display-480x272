@@ -1,0 +1,1 @@
+-T rom.api.ld -T esp32c5.peripherals.ld -T esp32c5.rom.ld -T esp32c5.rom.api.ld -T esp32c5.rom.rvfp.ld -T esp32c5.rom.wdt.ld -T esp32c5.rom.systimer.ld -T esp32c5.rom.version.ld -T esp32c5.rom.phy.ld -T esp32c5.rom.coexist.ld -T esp32c5.rom.net80211.ld -T esp32c5.rom.pp.ld -T esp32c5.rom.libc.ld -T esp32c5.rom.newlib.ld -T esp32c5.rom.heap.ld -T memory.ld -T sections.ld 
